@@ -11,7 +11,7 @@ from app.handlers import mail_results
 from app.middlewares import BlockMiddleware
 
 import app.database.requests as req
-import utils.json_requests as js
+import app.utils.json_requests as js
 import aioschedule as schedule
 
 

@@ -5,7 +5,7 @@ from aiogram import BaseMiddleware
 from aiogram.types import Message, TelegramObject
 from typing import Callable, Awaitable, Any, Dict
 
-import utils.json_requests as js
+import app.utils.json_requests as js
 
 
 # Принимаем медиа группу

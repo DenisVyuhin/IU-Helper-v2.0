@@ -9,14 +9,14 @@ from aiogram.filters import Command, CommandStart, CommandObject
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from aiogram.utils.media_group import MediaGroupBuilder
-from utils.utils import *
-from utils.mistral import mistral_ai, deepseek_ai
+from app.utils.utils import *
+from app.utils.mistral import mistral_ai, deepseek_ai
 from app.middlewares import TestMiddleware
 
 import app.keyboards as kb
 import app.database.requests as req
 import constants as con
-import utils.json_requests as js
+import app.utils.json_requests as js
 
 
 dotenv.load_dotenv()

@@ -5,7 +5,7 @@ import app.database.requests as req
 from aiogram import Bot
 from aiogram.types import Message
 from aiogram.enums.input_media_type import InputMediaType
-from utils.mistral import mistral_ai, deepseek_ai
+from app.utils.mistral import mistral_ai, deepseek_ai
 from dotenv import load_dotenv
 
 load_dotenv()
