@@ -1,0 +1,66 @@
+{
+   "all_time": [
+      {
+         "name": "Денчик",
+         "user_id": 1149546500,
+         "user_name": "KodersUp",
+         "hw_count": 3
+      },
+      {
+         "name": "Ваня",
+         "user_id": 8446895432,
+         "user_name": "vanechkasuper221",
+         "hw_count": 1
+      },
+      {
+         "name": "Даня",
+         "user_id": 7867795124,
+         "user_name": "bagap2",
+         "hw_count": 19
+      },
+      {
+         "name": "You",
+         "user_id": 7439303796,
+         "user_name": "Zjcosldnd",
+         "hw_count": 16
+      },
+      {
+         "name": "🤍🩷",
+         "user_id": 8149636999,
+         "user_name": "leleelelelelel",
+         "hw_count": 2
+      }
+   ],
+   "this_year": [
+      {
+         "name": "Денчик",
+         "user_id": 1149546500,
+         "user_name": "KodersUp",
+         "hw_count": 3
+      },
+      {
+         "name": "Ваня",
+         "user_id": 8446895432,
+         "user_name": "vanechkasuper221",
+         "hw_count": 1
+      },
+      {
+         "name": "Даня",
+         "user_id": 7867795124,
+         "user_name": "bagap2",
+         "hw_count": 19
+      },
+      {
+         "name": "You",
+         "user_id": 7439303796,
+         "user_name": "Zjcosldnd",
+         "hw_count": 16
+      },
+      {
+         "name": "🤍🩷",
+         "user_id": 8149636999,
+         "user_name": "leleelelelelel",
+         "hw_count": 2
+      }
+   ]
+}
