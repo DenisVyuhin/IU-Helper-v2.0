@@ -1,0 +1,7 @@
+aiogram==3.22.0
+sqlalchemy==2.0.44
+aiosqlite==0.21.0
+mistralai==1.9.11
+openai==2.8.1
+python-dotenv==1.2.1
+aioschedule==0.5.2
