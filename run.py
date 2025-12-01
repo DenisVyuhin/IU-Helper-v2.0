@@ -20,7 +20,6 @@ bot = Bot(os.getenv('BOT_TOKEN'))
 dp = Dispatcher()
 dp.update.middleware(BlockMiddleware())
 
-
 async def main():
    asyncio.create_task(scheduler())
    await async_main()
