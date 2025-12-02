@@ -5,7 +5,7 @@ import constants as con
 def get_users(path: str = "all_time", amount: int = 15) -> list:
    users = []
 
-   with open("stats.json", "r", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/stats.json", "r", encoding="utf-8") as file:
       data = json.load(file)
 
    for user in data[path]:
@@ -37,7 +37,7 @@ def get_users(path: str = "all_time", amount: int = 15) -> list:
 def get_users_names(path: str = "all_time", amount: int = 15) -> list:
    users = []
 
-   with open("stats.json", "r", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/stats.json", "r", encoding="utf-8") as file:
       data = json.load(file)
 
    for user in data[path]:
@@ -69,7 +69,7 @@ def get_winners_elements(path: str = "all_time") -> list:
    users = []
    amount_winners = 3
 
-   with open("stats.json", "r", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/stats.json", "r", encoding="utf-8") as file:
       data = json.load(file)
 
    for user in data[path]:
@@ -116,7 +116,7 @@ def get_winners() -> list:
 
 
 def add_hw_count(path: str = "", name: str = "", user_id: int = 0, user_name: str = "None", count: int = 0) -> None:
-   with open("stats.json", "r", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/stats.json", "r", encoding="utf-8") as file:
       data = json.load(file)
    
    is_user = False
@@ -136,12 +136,12 @@ def add_hw_count(path: str = "", name: str = "", user_id: int = 0, user_name: st
          "hw_count": count
       })
    
-   with open("stats.json", "w", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/stats.json", "w", encoding="utf-8") as file:
       json.dump(data, file, indent=3, ensure_ascii=False)
 
 
 def clear_hw_count(path: str = "") -> None:
-   with open("stats.json", "w", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/stats.json", "w", encoding="utf-8") as file:
       data = json.load(file)
 
       for user in data[path]:
@@ -155,7 +155,7 @@ def clear_hw_count(path: str = "") -> None:
 
 
 def ban_user(user_id: int) -> None:
-   with open("banned.json", "r", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/banned.json", "r", encoding="utf-8") as file:
       data = json.load(file)
 
    if "banned" not in data:
@@ -164,12 +164,12 @@ def ban_user(user_id: int) -> None:
    if user_id not in data["banned"]:
       data["banned"].append(user_id)
 
-   with open("banned.json", "w", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/banned.json", "w", encoding="utf-8") as file:
       json.dump(data, file, indent=3, ensure_ascii=False)
 
 
 def unban_user(user_id: int) -> None:
-   with open("banned.json", "r", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/banned.json", "r", encoding="utf-8") as file:
       data = json.load(file)
 
    if "banned" not in data:
@@ -178,12 +178,12 @@ def unban_user(user_id: int) -> None:
    if user_id in data["banned"]:
       data["banned"].remove(user_id)
 
-   with open("banned.json", "w", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/banned.json", "w", encoding="utf-8") as file:
       json.dump(data, file, indent=3, ensure_ascii=False)
 
 
 def get_banned_users() -> list:
-   with open("banned.json", "r", encoding="utf-8") as file:
+   with open("/home/container/iuhelper/banned.json", "r", encoding="utf-8") as file:
       data = json.load(file)
 
    if "banned" not in data:
