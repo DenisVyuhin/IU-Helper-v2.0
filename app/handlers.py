@@ -142,7 +142,7 @@ async def cmd_start(message : Message, state : FSMContext):
       )
 
    await message.reply(
-      f"<b>Привет {message.from_user.first_name}!</b>\n\n"
+      f"<b>🎄 Привет {message.from_user.first_name}! 🎄</b>\n\n"
       f"Здесь ты найдешь ДЗ, а также сможешь заработать 😉",
       parse_mode="html",
       reply_markup=kb.start_keyboard
@@ -1130,7 +1130,7 @@ async def cmd_profile(message : Message, state : FSMContext):
    await state.clear()
 
    await message.answer(
-      f"👤 <b>Это ваш профиль</b>\n"
+      f"🎅 <b>Это ваш профиль</b>\n"
       f"ID: {message.from_user.id}\n\n"
       f"<b>Статистика:</b>\n"
       f"Ваши ДЗ: {user.posts}\n\n"
@@ -1146,7 +1146,7 @@ async def cb_profile(callback : CallbackQuery):
    user = await req.get_user(callback.from_user.id)
 
    await callback.message.answer(
-      f"👤 <b>Это ваш профиль</b>\n"
+      f"🎅 <b>Это ваш профиль</b>\n"
       f"ID: {callback.from_user.id}\n\n"
       f"<b>Статистика:</b>\n"
       f"Ваши ДЗ: {user.posts}\n\n"
@@ -1737,7 +1737,7 @@ async def cb_cancel_money(callback : CallbackQuery, state : FSMContext):
 
    await state.clear()
    await callback.message.edit_text(
-      f"👤 <b>Это ваш профиль</b>\n"
+      f"🎅 <b>Это ваш профиль</b>\n"
       f"ID: {callback.from_user.id}\n\n"
       f"<b>Статистика:</b>\n"
       f"Ваши ДЗ: {user.posts}\n\n"

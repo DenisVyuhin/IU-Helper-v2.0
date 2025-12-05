@@ -6,7 +6,7 @@ import app.handlers as hnd
 
 
 start_keyboard = InlineKeyboardMarkup(inline_keyboard=[
-   [InlineKeyboardButton(text="👤 Мой профиль", callback_data="open_profile")],
+   [InlineKeyboardButton(text="🎅 Мой профиль", callback_data="open_profile")],
    [InlineKeyboardButton(text="🔎 Найти ДЗ", callback_data="search_dz"), InlineKeyboardButton(text="💡 Предложить ДЗ", callback_data="offer_dz")],
    # [InlineKeyboardButton(text="📚 Купить ДЗ", callback_data="buy_dz")],
    [InlineKeyboardButton(text="🏆 ТОП", callback_data="stats")]
@@ -206,7 +206,7 @@ buy_dz_keyboard = InlineKeyboardMarkup(inline_keyboard=[
 
 
 open_profile_keyboard = InlineKeyboardMarkup(inline_keyboard=[
-   [InlineKeyboardButton(text="👤 Открыть профиль", callback_data="open_profile")]
+   [InlineKeyboardButton(text="🎅 Открыть профиль", callback_data="open_profile")]
 ])
 
 
